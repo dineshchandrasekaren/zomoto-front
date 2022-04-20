@@ -1,0 +1,116 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Open Sans", sans-serif;
+}
+
+.customshadow:hover {
+  box-shadow: rgba(0, 0, 0, 0.3) 2px 2px 15px;
+}
+.customshadow1 {
+  box-shadow: rgba(0, 0, 0, 0.2) 0px -1px 4px;
+}
+.gradient-changer {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 1) 0%,
+    rgba(255, 255, 255, 1) 23%,
+    rgba(255, 229, 231, 1) 100%
+  );
+}
+.xss {
+  font-size: 0.7rem;
+}
+
+.w-custom {
+  width: 29%;
+}
+@media screen and (max-width: 410px) {
+  .bug-fix {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .center-custom {
+    right: 10%;
+    left: 10%;
+  }
+}
+.slick-prev,
+.slick-next {
+  font-size: 2.7rem !important;
+  color: #fff8f9 !important;
+  z-index: 9 !important;
+  top: 37% !important;
+}
+
+.slick-prev {
+  left: -0.8% !important;
+}
+.slick-next {
+  right: 0.4% !important;
+}
+
+.slick-prev > svg,
+.slick-next > svg {
+  filter: drop-shadow(3px 5px 4px rgba(0, 0, 0, 0.5));
+  z-index: 9 !important;
+}
+.slick-prev > svg:hover,
+.slick-next > svg:hover {
+  filter: drop-shadow(3px 5px 10px rgba(0, 0, 0, 1));
+  @apply rounded-full p-0;
+}
+
+.slick-prev:before,
+.slick-next:before {
+  content: "" !important;
+}
+
+.leaflet-container {
+  width: inherit;
+  height: inherit;
+}
+
+/* toast
+.toast-container {
+  display: flex;
+  justify-content: center;
+}
+.message {
+  color: rgba(255, 255, 255, 0.89);
+  font-size: 1rem;
+}
+
+.toast {
+  background-color: #e23744;
+  width: 30ch;
+  padding: 1.5rem 1.5rem;
+  border-radius: 5px;
+  text-align: center;
+  visibility: hidden;
+  position: absolute;
+  display: hidden;
+  top: 10px;
+  animation: mymove 4s linear;
+}
+@keyframes mymove {
+  25% {
+    top: 10px;
+    visibility: visible;
+    display: inline-block;
+    opacity: 100%;
+  }
+  75% {
+    opacity: 20%;
+  }
+
+  100% {
+    opacity: 0%;
+    display: hidden;
+  }
+} */
