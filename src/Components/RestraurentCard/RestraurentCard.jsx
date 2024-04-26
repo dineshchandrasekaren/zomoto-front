@@ -18,8 +18,8 @@ function RestraurentCard({
   const image2 =
     "https://b.zmtcdn.com/data/o2_assets/4bf016f32f05d26242cea342f30d47a31595763089.png?output-format=webp";
   return (
-    <Link to="/restraurant/123">
-      <div className="flex flex-col cursor-pointer transition duration-700 customshadow lg:w-1/3 md:w-1/2 w-full c gap-1.5 p-2 rounded-2xl  hover:border-2 hover:border-blue-600 ">
+    <>
+      <Link to="/restraurant/123" className="flex flex-col cursor-pointer transition duration-700 customshadow lg:w-1/3 md:w-1/2 w-full c gap-1.5 p-2 rounded-2xl  hover:border-2 hover:border-blue-600 ">
         <div className="relative  rounded-xl">
           <img
             className="w-full h-full rounded-2xl"
@@ -155,8 +155,8 @@ function RestraurentCard({
             </Carousel>
           </div>
         </div>
-      </div>
-    </Link>
+      </Link>
+    </>
   );
 }
 
